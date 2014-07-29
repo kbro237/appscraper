@@ -15,6 +15,6 @@ Make sure to fill in your own data near the top of the script.
 
 or, something like
 
-    appscraper.py > bcat
+    appscraper.py | bcat
 
 ([bcat](https://rtomayko.github.io/bcat/), by the way, is very useful.)

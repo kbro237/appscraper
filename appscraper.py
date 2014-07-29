@@ -55,10 +55,12 @@ print '''
     <ul>
 '''
 
+# We figure out which pages to scrape by counting up from the first
+# page in intervals of 20 until we get to the last app. 
 for i in range(1, TOTAL_APPS, 20):
     wishlist_scrape(i)
 
-# OK, finish off the html
+# OK, finish off the html.
 print '''
     </ul>
   </main>
