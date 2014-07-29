@@ -1,4 +1,4 @@
-# appscrapper.py
+# appscraper.py
 
 This Python script will output html data containing a list of all the apps in your [Appshopper](http://www.appshopper.com/) wishlist.
 

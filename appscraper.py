@@ -7,7 +7,8 @@ from bs4 import BeautifulSoup
 # Change these variables to your appshopper.com login info.
 APPSHOPPER_USER = 'user'
 APPSHOPPER_PASS = 'pass'
-# Change this variable to the total number of apps in your wishlist. I realize this could be done programmatically, but... meh.
+# Change this variable to the total number of apps in your wishlist. I
+# realize this could be done programmatically, but... meh.
 TOTAL_APPS = 535
 
 # That's it. Let the computer do the rest...
@@ -20,10 +21,12 @@ br.form['username'] = APPSHOPPER_USER
 br.form['password'] = APPSHOPPER_PASS
 br.submit()
 
-# Here's a function to access a single page of our wishlist.
-# The number passed to the url gives the starting number for app count; apps are displayed 20 at a time.
+# Here's a function to access a single page of our wishlist.  The number
+# passed to the url gives the starting number for app count; apps are
+# displayed 20 at a time.
 def wishlist_scrape(page):
-    '''Scrapes an arbitrary page of an appshopper.com wishlist for the app name and the type of app (iOS Universal, Mac, etc.)'''
+    '''Scrapes an arbitrary page of an appshopper.com wishlist for the
+app name and the type of app (iOS Universal, Mac, etc.)'''
     wishpage = 'http://appshopper.com/wishlist/' + str(page)
     br.open(wishpage)
     response1 = br.response()
