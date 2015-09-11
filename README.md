@@ -1,3 +1,5 @@
+**UPDATE:** This script does not currently work due to changes in the Appshopper website!
+
 # appscraper.py
 
 This Python script will output html data containing a list of all the apps in your [Appshopper](http://www.appshopper.com/) wishlist.
